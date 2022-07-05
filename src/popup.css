@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?&family=Open+Sans:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 250px;
+  height: 350px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Open sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body > .pages > div {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  height: 350px;
+}
+
+@media screen and (max-width: 350px) {
+  .App > div {
+    width: 150px;
+    height: auto;
+  }
+
+  .barcode img {
+    width: 140px;
+  }
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  width: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px auto;
+  width: 100%;
+}
+
+#settings .selection {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.logo-container,
+.copy-to-clipboard {
+  cursor: pointer;
+}
+
+#address {
+  background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="logo-container">
+        <img
+          class="logo"
+          src="./images/logo.png"
+          width="60px"
+          alt="bitcoin logo"
+        />
+    </div>
+    <div class="pages">
+      <div class="start" id="start">
+        <button type="button" id="peers-btn" style="color: #111">
+          Peers
+        </button>
+
+        <button type="button" id="settings-btn" style="color: #111">
+          Settings
+        </button>
+      </div>
+
+      <div class="peers" id="peers">
+        <p class="passphrase" id="passphrase"></p>
+      </div>
+
+
+      <div class="settings" id="settings">
+        <h2>RPC Credentials</h2></br>
+        <div>
+          <label>Port</br>
+            <input type="text" name="port" id="port" />
+          </label>
+          <label>Username
+            <input type="text" name="username" id="username" />
+          </label>
+          <label>Password
+            <input type="text" name="password" id="password" />
+          </label></br>
+        </div>
+      </div>
+
+      <div class="loading" id="loading">Loading ...</div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

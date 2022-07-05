@@ -1,0 +1,25 @@
+{
+  "name": "Bitcoin Core Chrome Extension",
+  "description": "Bitcoin Core",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Bitcoin Core",
+    "default_icon": "/images/logo.png"
+  },
+  "icons": {
+    "16": "./images/logo.png",
+    "32": "./images/logo.png",
+    "48": "./images/logo.png",
+    "128": "./images/logo.png"
+  },
+  "permissions": ["scripting", "clipboardWrite"],
+  "host_permissions": [
+    "http://127.0.0.1:18332/",
+    "https://rpki-validator.ripe.net/"
+  ]
+}
