@@ -48,7 +48,7 @@ const renderPeersPage = async (props) => {
   for(var i = 0; i < peerlist.result.length; i++) {
     const address_port = String(peerlist.result[i].addr);
     const ip_address = address_port.substring(0, address_port.indexOf(':'));
-    document.getElementById('passphrase').innerHTML +=  ip_address + '<br>';
+    document.getElementById('address').innerHTML +=  ip_address + '<br>';
 
   /*
 
@@ -56,9 +56,10 @@ const renderPeersPage = async (props) => {
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
-  }
 
   */
+  }
+
 
 };
 
