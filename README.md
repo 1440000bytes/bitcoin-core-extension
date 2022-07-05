@@ -1,4 +1,4 @@
-# spectrum extension
+# core extension
  chrome extension for testing bitcoin p2p
 
 ![image](https://user-images.githubusercontent.com/94559964/177409695-8e68acb0-71b6-4b86-b512-85485c5222b0.png)
